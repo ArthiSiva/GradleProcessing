@@ -12,10 +12,11 @@ public class FourBallOop extends PApplet{
         PApplet.runSketch(processingArgs, fourBallOop);
     }
 
+
     public void settings(){
         size(500, 500);
         for(int i=1;i<=4;i++) {
-            ball.add(new Ball(this,this.start, i*height / 5,i));
+            ball.add(new Ball(this,this.start, (float)i*height / 5,i));
         }
     }
     public void draw(){

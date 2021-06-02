@@ -16,6 +16,7 @@ public class Ball extends PApplet {
         this.xSpeed=xSpeed;
     }
 
+
     public void step(){
         sketch.ellipse(x, y, size, size);
         this.x += this.xSpeed;
